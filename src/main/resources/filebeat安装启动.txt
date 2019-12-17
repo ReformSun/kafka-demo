@@ -1,0 +1,11 @@
+启动：nohup /opt/filebeat/filebeat -e -c /opt/filebeat/filebeat.yml  &
+    关闭：kill -9 `ps aux|grep filebeat|head -1|awk -F" " '{print $2}'`
+    查看进程：ps aux |grep filebeat
+    ./filebeat -e -c filebeat.yml -d "publish"
+
+    https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-6.5.4-linux-x86_64.tar.gz
+
+    https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-6.5.4-linux-x86.tar.gz
+
+
+
